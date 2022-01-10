@@ -34,6 +34,7 @@
             this.lstData = new System.Windows.Forms.ListView();
             this.btnImport = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // lstListBox
@@ -80,6 +81,7 @@
             this.btnImport.TabIndex = 4;
             this.btnImport.Text = "Import";
             this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // btnDelete
             // 
@@ -89,6 +91,11 @@
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "CAN database files (*.dbc)|*.dbc";
+            this.openFileDialog.Title = "Open CAN database file";
             // 
             // MainForm
             // 
@@ -116,6 +123,7 @@
         private System.Windows.Forms.ListView lstData;
         private System.Windows.Forms.Button btnImport;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
 

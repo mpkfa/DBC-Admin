@@ -16,5 +16,13 @@ namespace DBC_Admin
         {
             InitializeComponent();
         }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                CanFileParser.Parse(openFileDialog.FileName);
+            }
+        }
     }
 }
