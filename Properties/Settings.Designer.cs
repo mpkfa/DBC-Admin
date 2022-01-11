@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DBC_Admin.Properties
+namespace CanDbcAdmin.Properties
 {
 
 
