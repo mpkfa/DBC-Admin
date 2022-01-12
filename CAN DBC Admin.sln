@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAN Databases Admin", "CAN Databases Admin.csproj", "{DBE22AD0-3C3A-4F99-BD48-1F0F0E348A7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanDbcAdmin", "CanDbcAdmin.csproj", "{DBE22AD0-3C3A-4F99-BD48-1F0F0E348A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanDbcTests", "..\CanDbcTests\CanDbcTests.csproj", "{596040D5-B050-4EAF-BB9D-7A0D9994FEC3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DBE22AD0-3C3A-4F99-BD48-1F0F0E348A7B} = {DBE22AD0-3C3A-4F99-BD48-1F0F0E348A7B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{DBE22AD0-3C3A-4F99-BD48-1F0F0E348A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBE22AD0-3C3A-4F99-BD48-1F0F0E348A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBE22AD0-3C3A-4F99-BD48-1F0F0E348A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596040D5-B050-4EAF-BB9D-7A0D9994FEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596040D5-B050-4EAF-BB9D-7A0D9994FEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596040D5-B050-4EAF-BB9D-7A0D9994FEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596040D5-B050-4EAF-BB9D-7A0D9994FEC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

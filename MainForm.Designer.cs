@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstDatabases = new System.Windows.Forms.ListBox();
+            this.lstFiles = new System.Windows.Forms.ListBox();
             this.lblDatabases = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.btnImport = new System.Windows.Forms.Button();
@@ -39,17 +39,17 @@
             // 
             // lstDatabases
             // 
-            this.lstDatabases.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lstFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.lstDatabases.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstDatabases.FormattingEnabled = true;
-            this.lstDatabases.IntegralHeight = false;
-            this.lstDatabases.ItemHeight = 20;
-            this.lstDatabases.Location = new System.Drawing.Point(12, 34);
-            this.lstDatabases.Name = "lstDatabases";
-            this.lstDatabases.Size = new System.Drawing.Size(265, 490);
-            this.lstDatabases.TabIndex = 0;
-            this.lstDatabases.SelectedIndexChanged += new System.EventHandler(this.lstDatabases_SelectedIndexChanged);
+            this.lstFiles.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstFiles.FormattingEnabled = true;
+            this.lstFiles.IntegralHeight = false;
+            this.lstFiles.ItemHeight = 20;
+            this.lstFiles.Location = new System.Drawing.Point(12, 34);
+            this.lstFiles.Name = "lstDatabases";
+            this.lstFiles.Size = new System.Drawing.Size(265, 490);
+            this.lstFiles.TabIndex = 0;
+            this.lstFiles.SelectedIndexChanged += new System.EventHandler(this.lstDatabases_SelectedIndexChanged);
             // 
             // lblDatabases
             // 
@@ -120,7 +120,7 @@
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblDatabases);
-            this.Controls.Add(this.lstDatabases);
+            this.Controls.Add(this.lstFiles);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CAN Databases Admin";
@@ -132,7 +132,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox lstDatabases;
+        private System.Windows.Forms.ListBox lstFiles;
         private System.Windows.Forms.Label lblDatabases;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Button btnImport;
